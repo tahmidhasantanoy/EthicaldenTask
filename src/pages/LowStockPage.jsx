@@ -9,7 +9,7 @@ const LowStockPage = () => {
       {/* MasterLayout */}
       <MasterLayout>
         {/* Breadcrumb */}
-        <Breadcrumb title="Medicine Stock" />
+        <Breadcrumb title="Medicine List" />
 
         {/* EmailLayer */}
         <LowStockLayer />
