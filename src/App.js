@@ -100,6 +100,7 @@ import Employees from "./pages/EmployeesPage";
 import EmployeesPage from "./pages/EmployeesPage";
 import MedicineCategoryPage from "./pages/MedicineCategoryPage";
 import MedicinesPage from "./pages/MedicinesPage";
+import MedicineStockPage from "./pages/MedicineStockPage";
 
 function App() {
   return (
@@ -188,6 +189,7 @@ function App() {
           element={<MedicineCategoryPage />}
         />
         <Route exact path="/medicines" element={<MedicinesPage />} />
+        <Route exact path="/medicine-stock" element={<MedicineStockPage />} />
         <Route
           exact
           path="/notification-alert"

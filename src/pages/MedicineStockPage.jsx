@@ -1,21 +1,21 @@
 import React from "react";
 import MasterLayout from "../masterLayout/MasterLayout";
 import Breadcrumb from "../components/Breadcrumb";
-import MedicinesLayer from "../components/MedicinesLayer";
+import MedicineStockLayer from "../components/MedicineStockLayer";
 
-const MedicinesPage = () => {
+const MedicineStockPage = () => {
   return (
     <>
       {/* MasterLayout */}
       <MasterLayout>
         {/* Breadcrumb */}
-        <Breadcrumb title="Medicines" />
+        <Breadcrumb title="Medicine Stock" />
 
         {/* EmailLayer */}
-        <MedicinesLayer />
+        <MedicineStockLayer />
       </MasterLayout>
     </>
   );
 };
 
-export default MedicinesPage;
+export default MedicineStockPage;

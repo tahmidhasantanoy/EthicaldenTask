@@ -302,6 +302,15 @@ const MasterLayout = ({ children }) => {
                 <span>Medicine</span>
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/medicine-stock"
+                className={(navData) => (navData.isActive ? "active-page" : "")}
+              >
+                <Icon icon="mdi:pill" className="menu-icon" />
+                <span>Medicine Stock</span>
+              </NavLink>
+            </li>
 
             <li>
               <NavLink
