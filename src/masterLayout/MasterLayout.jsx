@@ -280,13 +280,14 @@ const MasterLayout = ({ children }) => {
             </li>
 
             <li className="sidebar-menu-group-title">Product Management</li>
+            
             <li>
               <NavLink
-                to="/email"
+                to="/medicine-category"
                 className={(navData) => (navData.isActive ? "active-page" : "")}
               >
-                <Icon icon="ph:users-three-bold" className="menu-icon" />
-                <span>Employees</span>
+                <Icon icon="mdi:plus" className="menu-icon" />
+                <span>Medicine Category</span>
               </NavLink>
             </li>
             <li>
