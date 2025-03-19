@@ -9,7 +9,7 @@ const AddOrderPage = () => {
       {/* MasterLayout */}
       <MasterLayout>
         {/* Breadcrumb */}
-        <Breadcrumb title="Add Category" />
+        <Breadcrumb title="Add Order" />
 
         {/* EmailLayer */}
         <AddMedicineStockLayer />

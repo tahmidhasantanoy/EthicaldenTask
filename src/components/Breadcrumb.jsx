@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react/dist/iconify.js";
 import React from "react";
 import { Link } from "react-router-dom";
 const Breadcrumb = ({ title }) => {
@@ -9,14 +10,6 @@ const Breadcrumb = ({ title }) => {
       </h6>
       <ul className="d-flex align-items-center gap-2">
         <li className="fw-medium">
-          {/* <Link
-            to="/"
-            className="d-flex align-items-center gap-1 hover-text-primary"
-          >
-
-            Dashboard
-          </Link> */}
-
           {title === "Dashboard" ||
           title === "Customers" ||
           title === "Medicine List" ? (
@@ -51,11 +44,85 @@ const Breadcrumb = ({ title }) => {
                 + Add New Order
               </button>
             </Link>
+          ) : title === "Add Employee" ? (
+            <div className="d-flex align-items-center gap-2">
+              <Link
+                to={`/dashboard`}
+                className="dashboard-link d-flex align-items-center gap-1"
+              >
+                <Icon
+                  icon="solar:home-smile-angle-outline"
+                  className="menu-icon"
+                />
+                <span>Dashboard</span>
+              </Link>
+              <span className="fw-medium">-</span>
+              <span className="fw-medium">{title}</span>
+            </div>
+          ) : title === "Add Category" ? (
+            <div className="d-flex align-items-center gap-2">
+              <Link
+                to={`/dashboard`}
+                className="dashboard-link d-flex align-items-center gap-1"
+              >
+                <Icon
+                  icon="solar:home-smile-angle-outline"
+                  className="menu-icon"
+                />
+                <span>Dashboard</span>
+              </Link>
+              <span className="fw-medium">-</span>
+              <span className="fw-medium">{title}</span>
+            </div>
+          ) : title === "Add Medicine" ? (
+            <div className="d-flex align-items-center gap-2">
+              <Link
+                to={`/dashboard`}
+                className="dashboard-link d-flex align-items-center gap-1"
+              >
+                <Icon
+                  icon="solar:home-smile-angle-outline"
+                  className="menu-icon"
+                />
+                <span>Dashboard</span>
+              </Link>
+              <span className="fw-medium">-</span>
+              <span className="fw-medium">{title}</span>
+            </div>
+          ) : title === "Add Medicine Stock" ? (
+            <div className="d-flex align-items-center gap-2">
+              <Link
+                to={`/dashboard`}
+                className="dashboard-link d-flex align-items-center gap-1"
+              >
+                <Icon
+                  icon="solar:home-smile-angle-outline"
+                  className="menu-icon"
+                />
+                <span>Dashboard</span>
+              </Link>
+              <span className="fw-medium">-</span>
+              <span className="fw-medium">{title}</span>
+            </div>
+          ) : title === "Add Order" ? (
+            <div className="d-flex align-items-center gap-2">
+              <Link
+                to={`/dashboard`}
+                className="dashboard-link d-flex align-items-center gap-1"
+              >
+                <Icon
+                  icon="solar:home-smile-angle-outline"
+                  className="menu-icon"
+                />
+                <span>Dashboard</span>
+              </Link>
+              <span className="fw-medium">-</span>
+              <span className="fw-medium">{title}</span>
+            </div>
           ) : (
             ""
           )}
         </li>
-        {/* <li className="fw-medium">{title}</li> */}
       </ul>
     </div>
   );

@@ -105,14 +105,14 @@ const MasterLayout = ({ children }) => {
           <Icon icon="radix-icons:cross-2" />
         </button>
         <div>
-          <Link to="/" className="sidebar-logo">
+          <Link to="/dashboard" className="sidebar-logo"> {/* dad */}
             <img
-              src="assets/images/logo.png"
+              src="../../public/assets/logo.png"
               alt="site logo"
               className="light-logo"
             />
             <img
-              src="assets/images/logo-light.png"
+              src="../../public/assets/logo.png"
               alt="site logo"
               className="dark-logo"
             />
