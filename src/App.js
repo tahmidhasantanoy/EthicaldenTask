@@ -106,6 +106,7 @@ import AddMedicineCategoryPage from "./pages/AddMedicineCategoryPage";
 import AddMedicinePage from "./pages/AddMedicinePage";
 import AddMedicineStockPage from "./pages/AddMedicineStockPage";
 import AddOrderPage from "./pages/AddOrderPage";
+import DashboardPage from "./pages/DashboardPage";
 
 function App() {
   return (
@@ -149,6 +150,7 @@ function App() {
         <Route exact path="/column-chart" element={<ColumnChartPage />} />
         <Route exact path="/company" element={<CompanyPage />} />
         <Route exact path="/currencies" element={<CurrenciesPage />} />
+        <Route exact path="/dashboard" element={<DashboardPage />} />
         <Route exact path="/dropdown" element={<DropdownPage />} />
         <Route exact path="/employees" element={<EmployeesPage />} />
         <Route exact path="/faq" element={<FaqPage />} />
@@ -185,11 +187,7 @@ function App() {
           path="medicine-stock/add-medicine-stock"
           element={<AddMedicineStockPage />}
         />
-        <Route
-          exact
-          path="order/add-order"
-          element={<AddOrderPage />}
-        />
+        <Route exact path="order/add-order" element={<AddOrderPage />} />
 
         <Route exact path="/testimonials" element={<TestimonialsPage />} />
         <Route exact path="/coming-soon" element={<ComingSoonPage />} />

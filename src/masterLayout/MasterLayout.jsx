@@ -124,17 +124,19 @@ const MasterLayout = ({ children }) => {
           </Link>
         </div>
 
-        {/* TTD : Dashboard sub menu */}
         <div className="sidebar-menu-area">
           <ul className="sidebar-menu" id="sidebar-menu">
             <li className="dropdown">
-              <Link to="#">
-                <Icon
-                  icon="solar:home-smile-angle-outline"
-                  className="menu-icon"
-                />
+
+              <li>
+              <NavLink
+                to="/dashboard"
+                className={(navData) => (navData.isActive ? "active-page" : "")}
+              >
+                <Icon icon="solar:home-smile-angle-outline" className="menu-icon" />
                 <span>Dashboard</span>
-              </Link>
+              </NavLink>
+            </li>
               {/* <ul className='sidebar-submenu'>
                 <li>
                   <NavLink
