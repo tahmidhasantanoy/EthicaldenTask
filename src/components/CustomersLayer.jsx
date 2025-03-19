@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const ChatMessageLayer = () => {
+const CustomersLayer = () => {
   const usersData = [
     {
       EID: "1001",
@@ -165,4 +165,4 @@ const ChatMessageLayer = () => {
   );
 };
 
-export default ChatMessageLayer;
+export default CustomersLayer;

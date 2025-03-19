@@ -17,7 +17,7 @@ import CalendarMainPage from "./pages/CalendarMainPage";
 import CardPage from "./pages/CardPage";
 import CarouselPage from "./pages/CarouselPage";
 import ChatEmptyPage from "./pages/ChatEmptyPage";
-import ChatMessagePage from "./pages/ChatMessagePage";
+import ChatMessagePage from "./pages/CustomersPage";
 import ChatProfilePage from "./pages/ChatProfilePage";
 import CodeGeneratorNewPage from "./pages/CodeGeneratorNewPage";
 import CodeGeneratorPage from "./pages/CodeGeneratorPage";

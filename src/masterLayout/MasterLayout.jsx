@@ -279,7 +279,7 @@ const MasterLayout = ({ children }) => {
               </NavLink>
             </li>
 
-            <li className="sidebar-menu-group-title">Application</li>
+            <li className="sidebar-menu-group-title">Product Management</li>
             <li>
               <NavLink
                 to="/email"

@@ -1,10 +1,10 @@
 import React from "react";
 import MasterLayout from "../masterLayout/MasterLayout";
 import Breadcrumb from "../components/Breadcrumb";
-import ChatMessageLayer from "../components/ChatMessageLayer";
+import ChatMessageLayer from "../components/CustomersLayer";
 
 
-const ChatMessagePage = () => {
+const CustomersPage = () => {
   return (
     <>
       {/* MasterLayout */}
@@ -22,4 +22,4 @@ const ChatMessagePage = () => {
   );
 };
 
-export default ChatMessagePage;
+export default CustomersPage;
