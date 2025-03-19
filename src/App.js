@@ -104,6 +104,7 @@ import OrderPage from "./pages/OrderPage";
 import AddEmployeePage from "./pages/AddEmployeePage";
 import AddMedicineCategoryPage from "./pages/AddMedicineCategoryPage";
 import AddMedicinePage from "./pages/AddMedicinePage";
+import AddMedicineStockPage from "./pages/AddMedicineStockPage";
 
 function App() {
   return (
@@ -177,6 +178,11 @@ function App() {
           exact
           path="medicines/add-medicine"
           element={<AddMedicinePage />}
+        />
+        <Route
+          exact
+          path="medicine-stock/add-medicine-stock"
+          element={<AddMedicineStockPage />}
         />
 
         <Route exact path="/testimonials" element={<TestimonialsPage />} />
