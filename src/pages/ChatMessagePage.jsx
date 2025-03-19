@@ -11,7 +11,7 @@ const ChatMessagePage = () => {
       <MasterLayout>
 
         {/* Breadcrumb */}
-        <Breadcrumb title="Chat Message" />
+        <Breadcrumb title="Customers" />
 
         {/* ChatMessageLayer */}
         <ChatMessageLayer />

@@ -9,7 +9,7 @@ const EmployeesPage = () => {
       {/* MasterLayout */}
       <MasterLayout>
         {/* Breadcrumb */}
-        <Breadcrumb title="Email" />
+        <Breadcrumb title="Employees" />
 
         {/* EmailLayer */}
         <EmployeesLayer />
