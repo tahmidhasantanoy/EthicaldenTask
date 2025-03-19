@@ -56,7 +56,7 @@ const OrderLayer = () => {
   };
 
   return (
-    <div className="col-xxl-12 col-xl-10">
+    <div className="col-xxl-12 col-xl-11">
       <div className="card h-100">
         <div className="card-body p-24">
           {/* Search & Entries per Page */}
