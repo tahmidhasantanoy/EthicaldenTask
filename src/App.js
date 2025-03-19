@@ -99,6 +99,7 @@ import BlankPagePage from "./pages/BlankPagePage";
 import Employees from "./pages/EmployeesPage";
 import EmployeesPage from "./pages/EmployeesPage";
 import MedicineCategoryPage from "./pages/MedicineCategoryPage";
+import MedicinesPage from "./pages/MedicinesPage";
 
 function App() {
   return (
@@ -186,6 +187,7 @@ function App() {
           path="/medicine-category"
           element={<MedicineCategoryPage />}
         />
+        <Route exact path="/medicines" element={<MedicinesPage />} />
         <Route
           exact
           path="/notification-alert"

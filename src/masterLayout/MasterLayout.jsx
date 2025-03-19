@@ -274,13 +274,16 @@ const MasterLayout = ({ children }) => {
                 to="/customers"
                 className={(navData) => (navData.isActive ? "active-page" : "")}
               >
-                <Icon icon="solar:users-group-rounded-bold" className="menu-icon" />
+                <Icon
+                  icon="solar:users-group-rounded-bold"
+                  className="menu-icon"
+                />
                 <span>Customers</span>
               </NavLink>
             </li>
 
             <li className="sidebar-menu-group-title">Product Management</li>
-            
+
             <li>
               <NavLink
                 to="/medicine-category"
@@ -290,6 +293,16 @@ const MasterLayout = ({ children }) => {
                 <span>Medicine Category</span>
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/medicines"
+                className={(navData) => (navData.isActive ? "active-page" : "")}
+              >
+                <Icon icon="mdi:pill" className="menu-icon" />
+                <span>Medicine</span>
+              </NavLink>
+            </li>
+
             <li>
               <NavLink
                 to="/chat-message"
