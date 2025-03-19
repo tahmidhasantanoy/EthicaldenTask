@@ -1,479 +1,168 @@
-import { Icon } from '@iconify/react/dist/iconify.js';
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Icon } from "@iconify/react/dist/iconify.js";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ChatMessageLayer = () => {
-    return (
-        <div className="chat-wrapper">
-            <div className="chat-sidebar card">
-                <div className="chat-sidebar-single active top-profile">
-                    <div className="img">
-                        <img src="assets/images/chat/1.png" alt="image_icon" />
-                    </div>
-                    <div className="info">
-                        <h6 className="text-md mb-0">Kathryn Murphy</h6>
-                        <p className="mb-0">Available</p>
-                    </div>
-                    <div className="action">
-                        <div className="btn-group">
-                            <button
-                                type="button"
-                                className="text-secondary-light text-xl"
-                                data-bs-toggle="dropdown"
-                                data-bs-display="static"
-                                aria-expanded="false"
-                            >
-                                <Icon icon="bi:three-dots" />
-                            </button>
-                            <ul className="dropdown-menu dropdown-menu-lg-end border">
-                                <li>
-                                    <Link
-                                        to="/chat-profile"
-                                        className="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2"
-                                    >
-                                        <Icon icon="fluent:person-32-regular" />
-                                        Profile
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        to="/chat-profile"
-                                        className="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2"
-                                    >
-                                        <Icon icon="carbon:settings" />
-                                        Settings
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                {/* chat-sidebar-single end */}
-                <div className="chat-search">
-                    <span className="icon">
-                        <Icon icon="iconoir:search" />
-                    </span>
-                    <input type="text" name="#0" autoComplete="off" placeholder="Search..." />
-                </div>
-                <div className="chat-all-list">
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/2.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Kathryn Murphy</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/3.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">James Michael</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single">
-                        <div className="img">
-                            <img src="assets/images/chat/4.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Russell Lucas</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single">
-                        <div className="img">
-                            <img src="assets/images/chat/5.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Caleb Bradley</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/6.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Bobby Roy</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/7.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Vincent Liam</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/8.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Randy Mason</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/9.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Albert Wayne</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/10.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Elijah Willie</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/2.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Kathryn Murphy</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/3.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">James Michael</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single">
-                        <div className="img">
-                            <img src="assets/images/chat/4.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Russell Lucas</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single">
-                        <div className="img">
-                            <img src="assets/images/chat/5.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Caleb Bradley</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/6.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Bobby Roy</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/7.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Vincent Liam</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/8.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Randy Mason</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/9.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Albert Wayne</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                    <div className="chat-sidebar-single active">
-                        <div className="img">
-                            <img src="assets/images/chat/10.png" alt="image_icon" />
-                        </div>
-                        <div className="info">
-                            <h6 className="text-sm mb-1">Elijah Willie</h6>
-                            <p className="mb-0 text-xs">hey! there i'm...</p>
-                        </div>
-                        <div className="action text-end">
-                            <p className="mb-0 text-neutral-400 text-xs lh-1">12:30 PM</p>
-                            <span className="w-16-px h-16-px text-xs rounded-circle bg-warning-main text-white d-inline-flex align-items-center justify-content-center">
-                                8
-                            </span>
-                        </div>
-                    </div>
-                    {/* chat-sidebar-single end */}
-                </div>
-            </div>
-            <div className="chat-main card">
-                <div className="chat-sidebar-single active">
-                    <div className="img">
-                        <img src="assets/images/chat/11.png" alt="image_icon" />
-                    </div>
-                    <div className="info">
-                        <h6 className="text-md mb-0">Kathryn Murphy</h6>
-                        <p className="mb-0">Available</p>
-                    </div>
-                    <div className="action d-inline-flex align-items-center gap-3">
-                        <button type="button" className="text-xl text-primary-light">
-                            <Icon icon="mi:call" />
-                        </button>
-                        <button type="button" className="text-xl text-primary-light">
-                            <Icon icon="fluent:video-32-regular" />
-                        </button>
-                        <div className="btn-group">
-                            <button
-                                type="button"
-                                className="text-primary-light text-xl"
-                                data-bs-toggle="dropdown"
-                                data-bs-display="static"
-                                aria-expanded="false"
-                            >
-                                <Icon icon="tabler:dots-vertical" />
-                            </button>
-                            <ul className="dropdown-menu dropdown-menu-lg-end border">
-                                <li>
-                                    <button
-                                        className="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2"
-                                        type="button"
-                                    >
-                                        <Icon icon="mdi:clear-circle-outline" />
-                                        Clear All
-                                    </button>
-                                </li>
-                                <li>
-                                    <button
-                                        className="dropdown-item rounded text-secondary-light bg-hover-neutral-200 text-hover-neutral-900 d-flex align-items-center gap-2"
-                                        type="button"
-                                    >
-                                        <Icon icon="ic:baseline-block" />
-                                        Block
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                {/* chat-sidebar-single end */}
-                <div className="chat-message-list">
-                    <div className="chat-single-message left">
-                        <img
-                            src="assets/images/chat/11.png"
-                            alt="image_icon"
-                            className="avatar-lg object-fit-cover rounded-circle"
-                        />
-                        <div className="chat-message-content">
-                            <p className="mb-3">
-                                It is a long established fact that a reader will be distracted by
-                                the readable content of a page when looking at its layout. The point
-                                of using Lorem Ipsum is that it has a more-or-less normal
-                                distribution of letters.
-                            </p>
-                            <p className="chat-time mb-0">
-                                <span>6.30 pm</span>
-                            </p>
-                        </div>
-                    </div>
-                    {/* chat-single-message end */}
-                    <div className="chat-single-message right">
-                        <div className="chat-message-content">
-                            <p className="mb-3">
-                                It is a long established fact that a reader will be distracted by
-                                the readable content of a page when looking at its layout. The point
-                                of using Lorem Ipsum is that it has a more-or-less normal
-                                distribution of letters.
-                            </p>
-                            <p className="chat-time mb-0">
-                                <span>6.30 pm</span>
-                            </p>
-                        </div>
-                    </div>
-                    {/* chat-single-message end */}
-                    <div className="chat-single-message left">
-                        <img
-                            src="assets/images/chat/11.png"
-                            alt="image_icon"
-                            className="avatar-lg object-fit-cover rounded-circle"
-                        />
-                        <div className="chat-message-content">
-                            <p className="mb-3">
-                                The point of using Lorem Ipsum is that it has a more-or-less normal
-                                distribution of letters, as opposed to using 'Content here, content
-                                here', making it look like readable English. Many desktop publishing
-                                packages and web page editors now use Lorem Ipsum as their
-                                default.Contrary to popular belief, Lorem Ipsum is not simply random
-                                text is the model text for your company.
-                            </p>
-                            <p className="chat-time mb-0">
-                                <span>6.30 pm</span>
-                            </p>
-                        </div>
-                    </div>
-                    {/* chat-single-message end */}
-                </div>
-                <form className="chat-message-box">
-                    <input type="text" name="chatMessage" placeholder="Write message" />
-                    <div className="chat-message-box-action">
-                        <button type="button" className="text-xl">
-                            <Icon icon="ph:link" />
-                        </button>
-                        <button type="button" className="text-xl">
-                            <Icon icon="solar:gallery-linear" />
-                        </button>
-                        <button
-                            type="submit"
-                            className="btn btn-sm btn-primary-600 radius-8 d-inline-flex align-items-center gap-1"
-                        >
-                            Send
-                            <Icon icon="f7:paperplane" />
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
+  const usersData = [
+    {
+      EID: "1001",
+      Name: "Dianne Russell",
+      Role: "Manager",
+      Contact: "(123) 456-7890",
+      Email: "redaniel@gmail.com",
+    },
+    {
+      EID: "1002",
+      Name: "Wade Warren",
+      Role: "Developer",
+      Contact: "(123) 456-7891",
+      Email: "xterris@gmail.com",
+    },
+    {
+      EID: "1003",
+      Name: "Albert Flores",
+      Role: "Designer",
+      Contact: "(123) 456-7892",
+      Email: "seannand@mail.ru",
+    },
+    {
+      EID: "1004",
+      Name: "Bessie Cooper",
+      Role: "Admin",
+      Contact: "(123) 456-7893",
+      Email: "igerrin@gmail.com",
+    },
+    {
+      EID: "1005",
+      Name: "Arlene McCoy",
+      Role: "HR",
+      Contact: "(123) 456-7894",
+      Email: "fellora@mail.ru",
+    },
+  ];
 
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredData, setFilteredData] = useState(usersData);
+
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+    const filtered = usersData.filter((user) =>
+      user.Role.toLowerCase().includes(query.toLowerCase())
     );
+    setFilteredData(filtered);
+  };
+  return (
+    <div className="col-xxl-12 col-xl-12">
+      <div className="card h-100">
+        <div className="card-body p-24">
+          {/* Search & Entries per Page */}
+          <div className="d-flex justify-content-between align-items-center mb-16">
+            {/* Entries Per Page */}
+            <div className="d-flex align-items-center gap-2">
+              <select className="form-select form-select-sm w-auto">
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+              </select>
+              <p className="mb-0">entries per page</p>
+            </div>
+
+            {/* Search Bar */}
+            <div>
+              <input
+                type="text"
+                className="form-control text-start"
+                placeholder="Search..."
+                value={searchQuery}
+                onChange={(e) => handleSearch(e.target.value)}
+              />
+            </div>
+          </div>
+
+          {/* Table */}
+          <div className="tab-content">
+            <div className="tab-pane fade show active">
+              <div className="table-responsive scroll-sm">
+                <table className="table bordered-table sm-table mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">SL No</th>
+                      <th scope="col">EID</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Role</th>
+                      <th scope="col">Contact</th>
+                      <th scope="col">Email</th>
+                      <th scope="col" className="text-center">
+                        Action
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {filteredData.map((user, index) => (
+                      <tr key={user.EID}>
+                        <td>{index + 1}</td>
+                        <td>{user.EID}</td>
+                        <td>{user.Name}</td>
+                        <td>{user.Role}</td>
+                        <td>{user.Contact}</td>
+                        <td>{user.Email}</td>
+                        <td className="text-center">
+                          <button className="btn btn-sm btn-warning me-2 rounded-pill">
+                            Edit
+                          </button>
+                          <button className="btn btn-sm btn-danger rounded-pill">
+                            Delete
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {/* Pagination & Entries Count */}
+          <div className="d-flex justify-content-between align-items-center mt-3">
+            {/* Left - Showing Entries Count */}
+            <div className="text-muted">
+              Showing {filteredData.length > 0 ? 1 : 0} to {filteredData.length}{" "}
+              of {usersData.length} entries
+            </div>
+
+            {/* Right - Pagination */}
+            <nav>
+              <ul className="pagination mb-0">
+                <li className="page-item">
+                  <button className="page-link text-black border-0">
+                    &lt;&lt;
+                  </button>
+                </li>
+                <li className="page-item">
+                  <button className="page-link text-black border-0">
+                    &lt;
+                  </button>
+                </li>
+                <li className="page-item active">
+                  <button className="page-link text-black border-0">1</button>
+                </li>
+                <li className="page-item">
+                  <button className="page-link text-black border-0">
+                    &gt;
+                  </button>
+                </li>
+                <li className="page-item">
+                  <button className="page-link text-black border-0">
+                    &gt;&gt;
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default ChatMessageLayer;

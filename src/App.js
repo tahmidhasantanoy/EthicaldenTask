@@ -6,7 +6,7 @@ import HomePageFour from "./pages/HomePageFour";
 import HomePageFive from "./pages/HomePageFive";
 import HomePageSix from "./pages/HomePageSix";
 import HomePageSeven from "./pages/HomePageSeven";
-import EmailPage from "./pages/EmailPage";
+import EmailPage from "./pages/EmployeesPage";
 import AddUserPage from "./pages/AddUserPage";
 import AlertPage from "./pages/AlertPage";
 import AssignRolePage from "./pages/AssignRolePage";
@@ -96,6 +96,8 @@ import ComingSoonPage from "./pages/ComingSoonPage";
 import AccessDeniedPage from "./pages/AccessDeniedPage";
 import MaintenancePage from "./pages/MaintenancePage";
 import BlankPagePage from "./pages/BlankPagePage";
+import Employees from "./pages/EmployeesPage";
+import EmployeesPage from "./pages/EmployeesPage";
 
 function App() {
   return (
@@ -126,7 +128,8 @@ function App() {
         <Route exact path='/card' element={<CardPage />} />
         <Route exact path='/carousel' element={<CarouselPage />} />
         <Route exact path='/chat-empty' element={<ChatEmptyPage />} />
-        <Route exact path='/chat-message' element={<ChatMessagePage />} />
+        {/* customers */}
+        <Route exact path='/customers' element={<ChatMessagePage />} />
         <Route exact path='/chat-profile' element={<ChatProfilePage />} />
         <Route exact path='/code-generator' element={<CodeGeneratorPage />} />
         <Route
@@ -139,7 +142,7 @@ function App() {
         <Route exact path='/company' element={<CompanyPage />} />
         <Route exact path='/currencies' element={<CurrenciesPage />} />
         <Route exact path='/dropdown' element={<DropdownPage />} />
-        <Route exact path='/email' element={<EmailPage />} />
+        <Route exact path='/employees' element={<EmployeesPage />} />
         <Route exact path='/faq' element={<FaqPage />} />
         <Route exact path='/forgot-password' element={<ForgotPasswordPage />} />
         <Route exact path='/form-layout' element={<FormLayoutPage />} />
