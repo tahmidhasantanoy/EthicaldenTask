@@ -101,6 +101,7 @@ import EmployeesPage from "./pages/EmployeesPage";
 import MedicineCategoryPage from "./pages/MedicineCategoryPage";
 import MedicinesPage from "./pages/MedicinesPage";
 import MedicineStockPage from "./pages/MedicineStockPage";
+import LowStockPage from "./pages/LowStockPage";
 
 function App() {
   return (
@@ -175,6 +176,7 @@ function App() {
         <Route exact path="/invoice-preview" element={<InvoicePreviewPage />} />
         <Route exact path="/kanban" element={<KanbanPage />} />
         <Route exact path="/language" element={<LanguagePage />} />
+        <Route exact path="/low-stock" element={<LowStockPage />} />
         <Route exact path="/line-chart" element={<LineChartPage />} />
         <Route exact path="/list" element={<ListPage />} />
         <Route

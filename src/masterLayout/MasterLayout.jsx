@@ -307,10 +307,26 @@ const MasterLayout = ({ children }) => {
                 to="/medicine-stock"
                 className={(navData) => (navData.isActive ? "active-page" : "")}
               >
-                <Icon icon="mdi:pill" className="menu-icon" />
+                <Icon
+                  icon="healthicons:medicines-outline"
+                  className="menu-icon"
+                />
                 <span>Medicine Stock</span>
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/low-stock"
+                className={(navData) => (navData.isActive ? "active-page" : "")}
+              >
+                <Icon icon="mdi:alert-circle" className="menu-icon" />
+                <span>Low Stock</span>
+              </NavLink>
+            </li>
+
+            <li className="sidebar-menu-group-title">Product Management</li>
+
+            
 
             <li>
               <NavLink
