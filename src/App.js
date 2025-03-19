@@ -101,6 +101,7 @@ import MedicinesPage from "./pages/MedicinesPage";
 import MedicineStockPage from "./pages/MedicineStockPage";
 import LowStockPage from "./pages/LowStockPage";
 import OrderPage from "./pages/OrderPage";
+import AddEmployeePage from "./pages/AddEmployeePage";
 
 function App() {
   return (
@@ -160,6 +161,7 @@ function App() {
         <Route exact path="/blog" element={<BlogPage />} />
         <Route exact path="/blog-details" element={<BlogDetailsPage />} />
         <Route exact path="/add-blog" element={<AddBlogPage />} />
+        <Route exact path="employees/add-employee" element={<AddEmployeePage />} />
 
         <Route exact path="/testimonials" element={<TestimonialsPage />} />
         <Route exact path="/coming-soon" element={<ComingSoonPage />} />
