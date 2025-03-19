@@ -102,6 +102,7 @@ import MedicineCategoryPage from "./pages/MedicineCategoryPage";
 import MedicinesPage from "./pages/MedicinesPage";
 import MedicineStockPage from "./pages/MedicineStockPage";
 import LowStockPage from "./pages/LowStockPage";
+import OrderPage from "./pages/OrderPage";
 
 function App() {
   return (
@@ -198,6 +199,7 @@ function App() {
           element={<NotificationAlertPage />}
         />
         <Route exact path="/notification" element={<NotificationPage />} />
+        <Route exact path="/order" element={<OrderPage />} />
         <Route exact path="/pagination" element={<PaginationPage />} />
         <Route exact path="/payment-gateway" element={<PaymentGatewayPage />} />
         <Route exact path="/pie-chart" element={<PieChartPage />} />
