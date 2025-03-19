@@ -119,6 +119,21 @@ const Breadcrumb = ({ title }) => {
               <span className="fw-medium">-</span>
               <span className="fw-medium">{title}</span>
             </div>
+          ) : title === "Dashboard" ? (
+            <div className="d-flex align-items-center gap-2">
+              <Link
+                to={`/dashboard`}
+                className="dashboard-link d-flex align-items-center gap-1"
+              >
+                <Icon
+                  icon="solar:home-smile-angle-outline"
+                  className="menu-icon"
+                />
+                <span>Dashboard</span>
+              </Link>
+              <span className="fw-medium">-</span>
+              <span className="fw-medium">{title}</span>
+            </div>
           ) : (
             ""
           )}

@@ -71,7 +71,7 @@ const LastOrder = () => {
       <div className="card h-100">
         <div className="card-body p-24">
           <div className="d-flex justify-content-between .align-items-center mb-16">
-            <p>Medicine List</p>
+            <p>Latest 5 Order</p>
             <Link
               to="/medicine-stock"
               className="btn text-primary d-flex align-items-center gap-2"
@@ -97,7 +97,17 @@ const LastOrder = () => {
                       <tr key={item.id}>
                         <td>{item.id}</td>
                         <td>${item.purchasePrice}</td>
-                        <td>{item.status}</td>
+                        <td>
+                          {item.totalPack === 0 ? (
+                            <p className="bg-danger-subtle text-danger fw-semibold px-2 py-1 text-center rounded-pill">
+                              Out of Stock
+                            </p>
+                          ) : (
+                            <p className="bg-success-subtle text-success fw-semibold px-2 py-1 text-center rounded-pill">
+                              Available
+                            </p>
+                          )}
+                        </td>
                       </tr>
                     ))}
                   </tbody>

@@ -67,7 +67,7 @@ const LatestMedicine = () => {
         <div className="card-body p-24">
           {/* Search & Entries per Page */}
           <div className="d-flex justify-content-between align-items-center mb-16">
-            <p>Medicine List</p>
+            <p>Latest 5 Medicine Stock</p>
             <Link
               to="/medicine-stock"
               className="btn text-primary d-flex align-items-center gap-2"

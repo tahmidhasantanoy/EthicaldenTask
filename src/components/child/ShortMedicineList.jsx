@@ -93,7 +93,17 @@ const ShortMedicineList = () => {
                         <td>{item.packSize}</td>
                         <td>${item.price}</td>
                         <td>{item.totalPackCase}</td>
-                        <td>{item.status}</td>
+                        <td>
+                          {item.totalPack === 0 ? (
+                            <p className="bg-danger-subtle text-danger fw-semibold px-2 py-1 text-center rounded-pill rounded">
+                              Out of Stock
+                            </p>
+                          ) : (
+                            <p className="bg-success-subtle text-success fw-semibold px-2 py-1 text-center rounded-pill rounded">
+                              Available
+                            </p>
+                          )}
+                        </td>
                         <td className="text-center">
                           <button className="btn btn-sm btn-warning me-2 rounded-pill">
                             Edit

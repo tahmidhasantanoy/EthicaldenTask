@@ -9,7 +9,7 @@ const DashboardPage = () => {
       {/* MasterLayout */}
       <MasterLayout>
         {/* Breadcrumb */}
-        <Breadcrumb title="Add Category" />
+        <Breadcrumb title="Dashboard" />
 
         {/* EmailLayer */}
         <DashboardLayer />
