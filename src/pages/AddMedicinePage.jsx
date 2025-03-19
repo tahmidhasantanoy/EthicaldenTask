@@ -1,9 +1,9 @@
 import React from "react";
 import MasterLayout from "../masterLayout/MasterLayout";
 import Breadcrumb from "../components/Breadcrumb";
-import AddMedicineCategoryLayer from "../components/AddMedicineCategoryLayer";
+import AddMedicineLayer from "../components/AddMedicineLayer";
 
-const AddMedicineCategoryPage = () => {
+const AddMedicinePage = () => {
   return (
     <>
       {/* MasterLayout */}
@@ -12,10 +12,10 @@ const AddMedicineCategoryPage = () => {
         <Breadcrumb title="Add Category" />
 
         {/* EmailLayer */}
-        <AddMedicineCategoryLayer />
+        <AddMedicineLayer />
       </MasterLayout>
     </>
   );
 };
 
-export default AddMedicineCategoryPage;
+export default AddMedicinePage;
